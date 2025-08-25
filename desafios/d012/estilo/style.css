@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Inserindo as fontes com links (google fonts)*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -10,7 +11,7 @@
     font-size: 1em;
 }
 
-:root {
+:root {   /*criando classes para as fontes*/
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: "Passion One", sans-serif;
     --font3: "Sriracha", cursive;
@@ -58,6 +59,10 @@ section {     /*configurando todas as sections*/
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -66,13 +71,25 @@ section.normal {
 section.imagem {
     background-color: rgb(34, 33, 33);
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /*borda na img*/
+    background-size: cover;   /*ajustar img*/
+    background-attachment: fixed; /*EFEITO PARALLAX fixando a img*/
 }
 
 section.imagem > p {     /*selecionar os paragrafos na classe*/
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;  /*posicionar img*/
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
