@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;  /*colar na parte -1pixel*/
+            background-color: gray;
+        }
+
+        /*tbody > tr:nth-child(2n) {  /*pseudo classe filho, de 2 em 2 (2n) - (odd)=impar  (even)=par
+            background-color: lightgray;
+        }*/
+
+        tbody > tr:nth-child(odd) {  /*IMPAR*/
+            background-color: white;
+            font-weight: bold;   /*negrito*/
+        }
+
+        tbody > tr:nth-child(even) {   /*PAR*/
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            CAPTION (LEGENDA)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>  <!--coluna abaixo do título -->
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">20 673 280</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">11 760 550</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">4 963 704</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="num">3 858 760</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">3 783 639</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--linha ao lado do título-->
+                <td class="num"><strong>45.039.933</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
